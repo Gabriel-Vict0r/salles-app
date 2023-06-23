@@ -1,17 +1,13 @@
 /* eslint-disable prettier/prettier */
-import { SafeAreaView, Text } from 'react-native';
-import styled from 'styled-components/native';
-
-const NewText = styled.Text`
-  font-size: 30px;
-  color: red;
-`;
+import {
+  SafeAreaView
+} from "react-native";
+import Login from "./modules/login";
 
 const App = () => {
   return (
     <SafeAreaView>
-      <Text>Testando</Text>
-      <NewText>Teste2</NewText>
+      <Login />
     </SafeAreaView>
   );
 };
