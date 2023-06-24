@@ -1,11 +1,19 @@
-import { Text, View } from "react-native"
-
+import { Text, TextInput, View } from "react-native";
+import { ContainerLogin } from "../styles/login.style";
+import Input from "../../../shared/components/input/input";
 const Login = () => {
+  const style = {
+    text: { backgroundColor: "blue" },
+    textColor: "white",
+  };
   return (
-      <View>
-          <Text>Login</Text>
+    <View>
+      <ContainerLogin>
+        <Text>Login</Text>
+        <Input />
+      </ContainerLogin>
     </View>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
